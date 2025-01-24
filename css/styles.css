@@ -6,7 +6,7 @@
   list-style: none;
   text-decoration: none;
 }
-
+/* Aplicamos estilos generales al body de familia y color y fondo */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -21,7 +21,7 @@ body {
   height: 75px;
 }
 
-/* Barra de navegación */
+/* Estilos para el nav, lo colocamos en linea damos espacios y un background */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@ nav {
   gap: 10px; /
 }
 
-/* Enlaces de navegación */
+/* Enlaces de navegación en linea y centrados*/
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -53,6 +53,7 @@ nav {
   transition: color 0.3s ease;
 }
 
+/* Hover blanco a los enlaces */
 .nav-link:hover {
   color: #fff;
 }
@@ -74,7 +75,7 @@ nav {
   color: #333;
 }
 
-/* Hero Section */
+/* Estilos principales para la hero section con un maximo de ancho y margenes */
 .hero {
   display: flex;
   justify-content: space-between; 
@@ -99,7 +100,7 @@ nav {
   width: 50%; 
   padding: 20px;
 }
-
+/* Color y fuente del titulo principal */
 .hero-aside h1 {
   margin-bottom: 20px;
   font-size: 28px;
@@ -118,6 +119,8 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+/* Estilos generales para la galeria del podcast */
 .podcast-gallery {
   display: flex;
   flex-wrap: wrap; 
@@ -128,6 +131,7 @@ h2 {
   margin: 30px auto;
 }
 
+/* Estilos de cada carta  */
 .card-gallery {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -156,6 +160,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Estilos del botón */
 .card-gallery button {
   background-color: #4b0082;
   color: #fff;
@@ -170,7 +175,7 @@ h2 {
   background-color: #5e35b1;
 }
 
-/* Sistema de calificación */
+/* Puntuación estrellas. alineadas y cambio de cursor */
 .rating {
   display: flex;
   justify-content: center;
@@ -189,7 +194,7 @@ h2 {
   color: gold;
 }
 
-/* Foro de comentarios */
+/* Comentarios del foro, alineamos en columna las distintas secciones con margenes maximo de ancho */
 .comments {
   display: flex;
   flex-direction: column;
@@ -209,6 +214,7 @@ h2 {
   color: #4b0082;
 }
 
+/* Los comentarios tambien en columna */
 .comment-list {
   display: flex;
   flex-direction: column;
@@ -236,6 +242,7 @@ h2 {
   width: 100%;
 }
 
+/* estilos del boton del formulario */
 #comment-form button {
   display: flex;
   justify-content: center;
@@ -262,6 +269,11 @@ h2 {
   background-color: #f5f5f5;
 }
 
+.services h2{
+  margin: 10px 0 20px 0;
+}
+
+/* Cuadricula de servicios en 3 columnas y un maximo de ancho */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -270,6 +282,7 @@ h2 {
   margin: auto;
 }
 
+/* Estilos de las cards de cada servicio */
 .service-card {
   background-color: #fff;
   border-radius: 10px;
@@ -284,12 +297,17 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Sección Cursos */
+/* Estilos para las imagenes de los cursos */
 .courses {
   text-align: center;
   padding: 20px;
 }
 
+.courses h2{
+  margin: 10px 0 20px 0;
+}
+
+/* Estilos de la cuadricula de cursos */
 .courses-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -298,6 +316,7 @@ h2 {
   margin: auto;
 }
 
+/* Estilo de la card de los cursos */
 .course-card {
   background-color: #fff;
   border-radius: 10px;
@@ -308,13 +327,13 @@ h2 {
 
 /* Estilos para las imágenes de formación */
 .course-card img {
-  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-  border-radius: 10px; /* Bordes redondeados */
-  margin-bottom: 10px; /* Espacio debajo de la imagen */
-  box-shadow: 2px 2px rgba(134, 134, 134, 0.358); /* Sombra sutil */
+  width: 100%; 
+  border-radius: 10px; 
+  margin-bottom: 10px;
+  box-shadow: 2px 2px rgba(134, 134, 134, 0.358); 
 }
 
-
+/* Estilos del botón de comprar, background, transicion de color etc  */
 .buy-button {
   background-color: #4b0082;
   color: #fff;
@@ -341,16 +360,29 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  align-items: center;
 }
 
+h2{
+  margin: 20px 0 20px 0;
+}
+
+/* Estilos para cada testimonio de usuario */
 .testimonial {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 10% 90%;
   align-items: center;
   gap: 10px;
   text-align: left;
   margin: auto;
-  width: 40%;
+  margin-bottom: 20px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: start;
 }
 
 .testimonial img {
@@ -360,12 +392,14 @@ h2 {
 }
 
 .testimonial p {
+  text-align: left;
   font-size: 14px;
   color: #555;
   line-height: 1.4;
+  margin-left: 15px;
 }
 
-/* Footer */
+/* Estilos del footer, alineado y con background gradiant */
 footer {
   text-align: center;
   padding: 10px;
@@ -373,6 +407,7 @@ footer {
   color: #fff;
 }
 
+/* Estilos de las RRSS */
 .social-icons a img {
   width: 30px;
   height: 30px;
